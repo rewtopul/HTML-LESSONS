@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 1. ОПЕРАЦИИ СО СТРОКАМИ.
+		/*
+		var m = 5 +'2';
+		var n = "2" / 2;
+		console.log(n);
+		var t = 14 % 8.5;
+
+		var y = (5=='5');
+		console.log(m);
+		console.log(t);
+		console.log(y);	
+		*/
+		// 2. ЛОГИЧЕСКИЕ ОПЕРААТОРЫ. //-логическое ИЛИ. &&-логическое умножение.!-отрицание.
+		/*
+
+		alert(true || true);
+
+		alert(false || true);
+
+		alert(true || false);
+
+		alert(false ||false);
+
+
+		alert(true && true);
+
+		alert(false && true);
+
+		alert(true && false);
+
+		alert(false && false);
+
+		alert(!true);
+
+		alert(!0);
+		*/
+
+
+
+
+		// 3. ОПЕРАТОР IF. РЕАЛИЗУЙТЕ ПРИМЕР. В () пишем условие, проверяем истина или ложь(истина выполняется ), {} тело условия.
+		/*
+
+			var x = 10;
+			 if(x>10){
+			 }
+			 else if(x<10){	
+			     x--;
+			 }else{
+			 	x=0
+			 }
+			 console.log(x);
+
+			 var d = 10;
+			 if(d>10){
+			 	d++;
+			 	if(d<20){
+			 		if(d>10){
+			 			d--;
+			 }
+			 d+=10;
+			}
+
+			 else{
+			 	d-=5;
+			 	if(d>10){
+			 		d=0;
+
+			 }
+		}
+		d++;
+	}
+
+	console.log(d);
+
+	*/
+
+
+
+
+
+	// 4. МАТЕМАТИЧЕСКИЕ ФУНКЦИИ. round-округление----random-случайный выбор.
+	/*
+
+	var x = 10, y = 5, z = 23;
+
+	Math.max(x, Math.max(y,z));
+	console.log(Math.max(x, Math.max(y,z)));
+
+	var x = Math.round(Math.random()*(10-1)+1);
+	console.log(Math.round(Math.random()*(10-1)+1));
+
+	alert (x);
+
+	*/
+
+
+
+
+
+	// 5. ТЕРНАРНЫЙ ОПЕРАТОР(?). сравниваеи да значеня. условия разделяютс двоеточием(:); confirm диалоговое окно поттвердить
+	/*
+	
+
+	var x = 15;
+	var y = (x>10) ? 12:10;
+    document.write(y);
+
+	var z = (y>11)? ((x>=10)?25:-5):5;
+	if (confirm( "Вы уверены , что хотите увидеть значение z?")){
+		alert(z);
+	}
+	*/
+	/*
+
+
+	var x = 15;
+	var y = (x>10) ? "x>10":"x<10";
+    document.write(y);
+
+	var z = (y>11)? ((x>=10)?25:-5):5;
+	if (confirm( "Вы уверены , что хотите увидеть значение z?")){
+		alert(z);
+	}
+	*/
+
+
+
+
+
+	// 6. ОПЕРАТОР SWITCH.перключатель
+	/*
+
+	var svetophor = prompt("Введите цвет (red,yelllow, green");
+	switch(svetophor){
+		case'red':// в случаи "red" сделай "Стоп""
+		console.log('Стоп');// пишется в консоле F12 "Стоп"
+		break // остановить оператор.
+		case 'green':
+		console.log('Вперёд');
+		break
+		case'yellow':
+		console.log('Внимание');
+		break;
+		default:
+		console.log('Поломка');
+	}
+	*/
+
+
+
+
+
+	// 7. ФУНКЦИИ. Функции – это блог кода, к которому можно обращаться из разных частей скрипта
+	/* 
+
+	function compare_nunbers(x, y){ //compare_numbers название функции, задано два параметра x,y
+
+		if(x > y)
+
+			alert("x > y");
+
+		else if (x < y)
+
+			 alert("x < y");
+
+		else
+
+			alert("x = y");
+	}
+
+	compare_numbers(10,20);
+	
+
+	compare_numbers(20, 10);
+	compare_numbers(20, 20); 
+*/
+
+
+
+
+// 8.	РЕКУРСИЯЮ.Вызов функции (метода) из самой функции. «Чтобы понять рекурсию, нужно сначала понять рекурсию.
+/*
+
+function fibonnacci(n, prev1 = 1, prev2 = 0){
+
+	var current = prev1 + prev2;
+
+	 var fibonnacci_string = current = " ";
+
+	 if (n > 1)
+
+
+	 	fibonnacci_string += fibonnacci(n - 1, current, prev1);
+
+	 return fibonnacci_string;
+
+}
+ 
+ num = prompt("Введите число");
+ document.write("Ряд фибоначчи будет:" + fibonnacci(num));
+ */
+
+
+
+	
+
+
+
+		
+
+
+
+
+
+
+
+
+
+	</script>
+	
+</body>
+</html>
