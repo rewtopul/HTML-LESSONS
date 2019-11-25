@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script>
+		function f(x) {
+			document.getElementById("header").style.color=x;
+
+		}
+	</script>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1 style="color:red;" id="header">Заголовок</h1>
+	<button onclick="f('red')">Красный</button>
+	<button onclick="f('green')">Зелёный</button>
+	<button onclick="f('blue')">Синий</button>
+
+<select onchange="f(this.value)">
+     <option value="red">Красный</option>
+     <option value="blue">Синий</option>
+     <option value="green">Зелёный</option>
+
+</select>
+	
+	
+</body>
+</html>
