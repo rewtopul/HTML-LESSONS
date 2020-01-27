@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Элементы типа email, url, tel</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Контактная информация</legend>
+			<p>
+				<!--
+					tmail - браузер проводит валидацию корректности введённого email адреса.					
+				-->
+				<label>
+					E-mail
+					<input type="email"  name="email" title="Фокмат данных не правильныйЮ Только в Chrome" />
+				</label>
+			</p>
+			<p>
+				<!--
+					url - браузер проводит  валидацию крректности ввдённого адреса.
+				-->
+				<label>
+					Сайт
+					<input type="url" name="websit" title="Абсалютный URL. Обязательно с протоколом HTTP. Пример - 
+					http://html5readiness.com/" />
+				</label>
+			</p>
+			<p>
+				<!-- 
+				tel - ьобильный браузер будет отображать электронную клавиатуру с цифрами
+			-->
+			<label>
+				Телефон
+				<input type="tel" name="phone" /></label>
+			</p>
+
+		</fieldset>
+		<br>
+		<p>
+			<input type="submit" value="Отправить" />
+		</p>
+	</form>
+	
+</body>
+</html>
