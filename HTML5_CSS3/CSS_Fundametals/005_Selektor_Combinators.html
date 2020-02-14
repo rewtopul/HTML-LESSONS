@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Combinators</title>
+
+	<style>
+		
+		/*
+
+		Элементы имеют общего родителя в документе и элемент р находится за элементом h2.
+
+		*/
+
+		h2 ~ p{
+			margin: 10px;
+			border: 1px solid green;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<h2>Hello</h2>
+	
+	     <ul>
+	     	<li>Item 1</li>
+	     	<li>Item 2</li>
+	     	<li>Item 3</li>
+	     </ul>
+
+	     <p>world</p> <!--данный элемент будет выбран селектором-->
+	 </div>
+
+	 <div>
+	 	<h2>Hello</h2>
+	 	<a href="#">Link</a>
+	 	<p>world</p> <!-- Данный элемент будет выбран селектором-->
+	 </div>
+
+	 <P>HELLO WORLD</P>
+	 <h2>hello world</h2>
+
+	     <a href="http://www.w3.org/TR/selectors/">SCC3 Selectors</a>
+
+</body>
+</html>

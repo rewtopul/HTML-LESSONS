@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vendor-Specific</title>
+	<style>
+		p{
+			/*
+
+			Если CSS свойства ещё не попало в спецификацию иличастично реализовано
+			используется специфическое название в соответствии с производителем бракзера
+
+			*/
+			-khtml-property: 1px; /* Kanqueror */
+			-ms-property: 1px; /* Microsoft IE */
+			-moz-property: 1px; /*Mozilla (Gecro browsers) */
+			-webkit-property: 1px; /*Safari & Ghrome */
+			-o-property: 1px; /* Opera*/
+			property: 1px; /* Стандатизираванное свойство */
+		}
+	</style>
+</head>
+<body>
+	<p>
+		Hello World
+	</p>
+	
+</body>
+</html>

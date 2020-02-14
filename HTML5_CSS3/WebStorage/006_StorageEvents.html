@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Уведомления об обновлениях Web Storage</title>
+	<script type="text/javascript">
+		
+		//Событие storage происходят при внесение изменений в localStorage(при добавлении, удалении ил измнении значений)
+		// Для того что бы увидеть работу этого примера, откройте в браузере две вкладки:
+		//В первой внесите изменения в localStorage, а на второй вкладке отслеживайте изменения.
+		window.addEventListener("storage", displayEvent, true);
+		window.addEventListener("load", init, false);
+
+		function init() {
+			var key = document.getElementById("keyInput");
+			var val = document.getElementById("valueInput");
+
+			document.getElementById("btnSave").onclick = function () {
+				window.localStorage.setItem(key.value, val.value);
+			}
+
+			document.getElementById("btnRemove").onclick = function () {
+				window.localStorage.removeItem(key.value);
+			}
+
+			document.getElementById("btnGet").onclick = function () {
+				alert(window.localStorage.getItem(key.value));
+			}
+		}
+		function displayEvent(e) {
+			var d = document.getElementById("output");
+			var massege = "key: " + e.key + "<br />";              // изменёгый ключ
+			massege += "newValue: " + e.newValue + "<br />";       // новое значение ключа
+			massege += "oldValue: " + e.oldValue + "<br />";       // старое значение ключа
+			massege += "url: " + e.url + "<br/>";                  // адрес страницы на которой произошли изменения
+			massege += "storagtArea: " + e.storagtArea + "<br />"; // ссылка на объект хранилища
+			d.innerHTML = massege;
+		}
+
+	</script>
+</head>
+<body>
+	Ключ <input id="keyInput" />
+	Значиние <input id="valueInput" />
+	<br />
+	<button id="btnSave">Сохранить</button>
+	<button id="btnGet">Прочитать</button>
+	<button id="btnRemove">Удалить по ключу</button>
+	<div id="output">
+	</div>
+</body>
+</html>

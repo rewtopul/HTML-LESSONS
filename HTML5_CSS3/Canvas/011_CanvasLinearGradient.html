@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
 	<title>LinearGradient</title>
 	<script src="Modernizr-2.0.6.js"></script>
 	<script>
-         function draw() {
-			// проверка пподдержки элемента  canvas в браузере.
-			if(!Modernizr.canvas) return;
+		function draw() {
+			if (!Modernizr.canvas) return;
 
-            // получение элемента и его графмческого контента.
 			var canvas = document.getElementById("canvas");
 			var context = canvas.getContext("2d");
 
-			 //  Сщздание объекта градиента и указание начальной и конечной точки оси градиента.
-			 var gradient = context.createLinearGradient(0, 0, 0, 300);
+			//Создание объекта градиента и указание начальной и конечной точки оси градиента
+			var gradient = context.createLinearGradient(0, 0, 0, 300);
 
-			 // Добавление цвета и смещение позиции остановки цвета.
-			 gradient.addColorStop(0, "Blue");
+			//Добавление цвета и смещения позиции остановки цвета
+			gradient.addColorStop(0, "Blue");
 
-			 // Добавление цвета и смещение позиции остановки цвета.
-			 gradient.addColorStop(0.5, "LightBlue");
+			//Добавление цвета и смещения позиции остановки цвета
+			gradient.addColorStop(0.5, "LightBlue");
 
-			 // Добавление цвета и смещение позиции остановки цвета.
-			 gradient.addColorStop(1, "White");
+			//Добавление цвета и смещения позиции остановки цвета
+			gradient.addColorStop(1, "White");
 
-			 // Установка объекта градиента в качестве цвета заливки крнтента.
-			 context.fillStyle = gradient;
-			 context.fillRect(0, 0, 300, 300);
+			//Установка объукта градиента в качестве цвета заливки контекста
+			context.fillStyle = gradient;
+			context.fillRect(0, 0, 300, 300);
 
-		}
+			}
 
-		 if (window.addEventListener)
+		if (window.addEventListener)
 			window.addEventListener("load", draw, true);
 	</script>
-	</head>
-	<body>
-		<canvas id="canvas" height="300" width="300" style="border: solid 1px black;">
-		Ваш браузер не поддерживает элемент <b>Canvas</b>
+</head>
+<body>
+	<canvas id="canvas" height="300" width="300" style="border: solid 1px black;"> Ваш браузер не поддерживает элемент<b>Canvas</b>
 	</canvas>
 </body>
 </html>
+ 

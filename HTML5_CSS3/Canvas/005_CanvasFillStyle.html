@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
 	<title>Canvas</title>
 	<script src="Modernizr-2.0.6.js"></script>
 	<script>
 		function draw() {
-			// проверка пподдержки элемента  canvas в браузере.
-			if(!Modernizr.canvas) return;
+			// проверка поддержки элемента canvas в браузере
+			if (!Modernizr.canvas) return;
 
-            // получение элемента и его графмческого контента.
 			var canvas = document.getElementById("canvas");
 			var context = canvas.getContext("2d");
 
 			context.save();
 			context.translate(100, 100);
 
-			// начало пути.
+			// начало пути
 			context.beginPath();
 			context.moveTo(0, 0);
 			context.lineTo(100, 0);
@@ -24,7 +22,7 @@
 			context.lineTo(0, 100);
 			context.closePath();
 
-			// настройка стиля заливки.
+			//настройка стиля заливки
 			context.fillStyle = "blue";
 			context.fill();
 
@@ -34,17 +32,16 @@
 			context.lineJoin = "round";
 			context.stroke();
 
-		    //восстонавливаем прежнее состояние кентента.
+			// восстановливаем прежнее состояние контекста
 			context.restore();
-        }
-         if (window.addEventListener)
-         	window.addEventListener("load", draw, true);
-		</script>
-	</head>
-	<body>
-		<canvas id="canvas" height="300" width="300" style="border: solid 1px black;">
-		Ваш браузер не поддерживает элемент <b>Canvas</b>
+		}
+
+		if (window.addEventListener)
+			window.addEventListener("load", draw, true);
+	</script>
+</head>
+<body>
+	<canvas id="canvas" height="300" width="300" style="border: solid 1px black;"> Ваш браузер не поддерживает элемент<b>Canvas</b>
 	</canvas>
 </body>
 </html>
-

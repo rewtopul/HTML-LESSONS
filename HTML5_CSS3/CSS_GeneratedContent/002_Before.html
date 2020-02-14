@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>::before</title>
+	<style>
+		p {
+			width: 400px;
+			height: 200px;
+			border: 1px solid black;
+		}
+
+		/* 
+		Псевдо элемент :: befere применяется для отображения желаемого контента до содержимого элемента,
+		к которому он добовляется
+		Работа совместно со свойством content.
+		*/
+		p::before {
+			content: ' Дарт Вердер';
+		}
+
+	</style>
+         
+</head>
+<body>
+	<p> любит учиться </p>
+	<p> любит работать </p>
+	<p> любит путешествовать </p>
+	<p> любит отдыхать </p>
+</head>
+<body>
+	
+</body>
+</html>

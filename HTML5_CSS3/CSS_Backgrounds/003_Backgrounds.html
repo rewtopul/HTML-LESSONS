@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Определение нескольких фонов</title>
+	<style>
+		#id1 {
+
+			/* background-image может использоваться для задания нескольких фонов одного блока.
+			Фоны должны быть определены через запятую во всех CSS свойствах котносящихся к настройкам фоновых изображений.
+			Фон определённый в списке первым будет отображаться поверх остальных.
+			*/
+			background-size: url(logo.png),url(bg.jpg);
+			background-size: bottom right, center;
+			background-size: no-repeat, no-repeat;
+
+		
+			-moz-background-size: 135px 41px, 100% 100%;
+			-o-background-size: 135px 41px, 100% 100%;
+			-webkit-background-size: 135px 41px, 100% 100%;
+			background-size: 135px 41px, 100% 100%;
+
+			 border: 1px #808080 solid;
+			 height: 270px;
+			 width: 350px; 
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="id1"></div>
+	
+</body>
+</html>
+</head>
+<body>
+	
+</body>
+</html>
