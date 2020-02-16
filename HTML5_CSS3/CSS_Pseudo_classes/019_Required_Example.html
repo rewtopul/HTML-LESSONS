@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>:otional</title>
+	<style>
+		p > label {
+			width: 100px;
+			float: left;
+			margin: 3px 0px 0px;
+		}
+		/* label для элемента с атрибутом required должен заканчиваться символом '*' */
+		input:required + label:after {
+			content: " *";
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<p>
+			<!--
+				Для того что бы создать селектор для label которые находятся перед элементом required в рзметке label
+				размещаем за imput для использования селектора Е + F с помощью стилей перемещаем label перед input
+			-->
+			<input type="text" required="required" />
+			<label>Login</label>
+		</p>
+
+		<p>
+			<input type="text" required="required" />
+			<label>Password</label>
+		</p>
+		<p>
+			<input type="text" required="required" />
+			<label>Email</label>
+		</p>
+		<p>
+			<input type="text" />
+			<label>Adress</label>
+		</p>
+		<p>
+			<input type="text" />
+			<label>Country</label>
+		</p>
+	</form>
+	
+</body>
+</html>
