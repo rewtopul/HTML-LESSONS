@@ -1,31 +1,31 @@
 .header a, a:hover {
-	color: #f0ad4e;
-	text-decoration: none;
+	color: #0066FF;
+	text-decoration: underline #6633CC;
 }
 
 .header h1 {
 	letter-spacing: 15px;
-	font-size: 300%;
+	font-size: 400%;
 }
 
 .header p {
-	color: white !important;
-	font-size: 90%;
-	letter-spacing: 3px;
+	color: red !important;
+	font-size: 150%;
+	letter-spacing: 8px;
 }
 
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-	color: #fff;
-	background-color: #346270; 
+	color: #ff00ff;
+	background-color: #00FF33; 
 }
 
 .nav-pills>li>a {
-	color: #fff;
+	color: #ff00ff;
 }
 
 .nav-pills>li>a:hover {
-	background-color: #346270;
+	background-color: #00FF33;
 }
 
 
@@ -75,7 +75,7 @@ html, body {
 .films_block img {
 	margin-bottom: 5%;
 	border-radius: 5px;
-	border: solid 5px #dad7d5;
+	border: solid 5px #6600CC;
 	width: 100%;
 }
 
@@ -94,11 +94,11 @@ html, body {
 }
 
 .panel-body {
-	background-color: #f9f9f9;
+	background-color: #9999FF;
 }
 
 .panel-info>.panel-heading {
-	background-color: #f0ad4e;
+	background-color: #FF00FF;
 	color: white;
 	border-color: transparent;
 }
@@ -118,12 +118,12 @@ html, body {
 }
 
 .list-group-item-warning {
-	color: #8a6d3b;
+	color: #CC0000;
 	background-color: #f9f9f9;
 }
 
 .badge {
-	background-color: #000000;
+	background-color: #CC0000;
 }
 
 
@@ -151,9 +151,9 @@ textarea.form-control {
 
 footer {
 	color: #666;
-	background: #222;
+	background: #FF9900;
 	padding: 17px 0 18px 0;
-	border-top: 1px solid #000;
+	border-top: 1px solid #3300CC;
 }
 
 footer a {
